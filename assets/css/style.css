@@ -112,21 +112,18 @@
 
 .novelties .novelties__front .novelties__aside .aside__card .card__img {
   width: 50%;
+  object-fit: cover;
 }
 
 .novelties .novelties__front .novelties__aside .aside__card .card__img .card__img--principal,
 .populars .populars__front .front__section .section__row--1 .row__card .card__img,
-.populars .populars__front .front__section .section__row--2 .row__card .card__img,
-.populars .populars__front .front__aside .aside__container--html .content__img, 
-.populars .populars__front .front__aside .aside__container--js .content__img, 
-.populars .populars__front .front__aside .aside__container--css .content__img, 
-.populars .populars__front .front__aside .aside__container--react .content__img,
-.populars .populars__front .front__aside .aside__container--vue .content__img,
-.populars .populars__front .front__aside .aside__container--bootstrap .content__img 
+.populars .populars__front .front__section .section__row--2 .row__card .card__img 
 {
-  display: inline-flex;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
   border-radius: 0.5em;
+  object-fit: cover;
 }
 
 .novelties .novelties__front .novelties__aside .aside__card .card__body {
@@ -177,25 +174,46 @@
  }
  .populars .populars__front .front__section .section__row--1, 
  .populars .populars__front .front__section .section__row--2 {
-  display: flex;
+  display: inline-flex;
   align-items: center;
  }
 
  .populars .populars__front .front__section .section__row--1 .row__card, 
  .populars .populars__front .front__section .section__row--2 .row__card
  {
-  width: 100%;
+  overflow: hidden;
+  width: 50%;
  }
-
+/* Agregar un div llamado aside__containers para que así aplicar la regla justify-contet:space around */
 .populars .populars__front .front__aside .aside__container--html, 
 .populars .populars__front .front__aside .aside__container--js, 
 .populars .populars__front .front__aside .aside__container--css, 
 .populars .populars__front .front__aside .aside__container--react,
 .populars .populars__front .front__aside .aside__container--vue,
 .populars .populars__front .front__aside .aside__container--bootstrap {
-  display: flex;
+  display:inline-flex;
+  justify-content: space-around;
   align-items: center;
   padding: 1em 0em;
+  width: 100%;
+ }
+
+ .populars .populars__front .front__aside .aside__container--html .container__img, 
+ .populars .populars__front .front__aside .aside__container--js .container__img, 
+ .populars .populars__front .front__aside .aside__container--css .container__img, 
+ .populars .populars__front .front__aside .aside__container--react .container__img,
+ .populars .populars__front .front__aside .aside__container--vue .container__img,
+ .populars .populars__front .front__aside .aside__container--bootstrap .container__img{
+  width: 15%;
+ }
+
+ .populars .populars__front .front__aside .aside__container--html .container__h4, 
+ .populars .populars__front .front__aside .aside__container--js .container__h4, 
+ .populars .populars__front .front__aside .aside__container--css .container__h4, 
+ .populars .populars__front .front__aside .aside__container--react .container__h4,
+ .populars .populars__front .front__aside .aside__container--vue .container__h4,
+ .populars .populars__front .front__aside .aside__container--bootstrap .container__h4{
+  width: 85%;
  }
 
  .populars .populars__front .front__aside {
