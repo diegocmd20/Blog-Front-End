@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* @media (max-width: 576px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .blogbar {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 5px 10px;
+  }
+
+  .blogbar__author,
+  .blogbar__content {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+} */
+
+
+
+*,body {
+  font-family: "Poppins", sans-serif;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.blogbar {
+  display: flex;
+  height: 100px;
+  padding: 1rem 1.5rem;
+}
+
+.blogbar .blogbar__content {
+  width: 50%;
+  align-items: center;
+  display: inline-flex;
+}
+
+.blogbar .blogbar__content .content__img {
+  width: 40px;
+  height: auto;
+  border-radius: 0.5em;
+  max-width: 100%;
+}
+
+.blogbar .blogbar__content .content__h3 {
+  font-weight: 700;
+  margin-left: 0.5em;
+}
+
+.novelties, .populars {
+  padding: 1rem 1.5rem;
+}
+.novelties .novelties__front,  .populars .populars__front
+{
+  display: flex;
+  width: 100%;
+}
+
+.novelties .novelties__front .front__card {
+  width: 60%;
+}
+.novelties .novelties__title .title__h3,
+.novelties .novelties__front .front__card .card__h3,
+.populars  .populars__front .populars__title .title__h3,
+.populars .front__aside .aside__title .title__h3{
+  font-weight: 700;
+  margin: 2rem 0rem;
+}
+
+.novelties .novelties__front .front__card .card__img {
+  max-width: 100%;
+  border-radius: 0.5em;
+  margin: 1em 0em;
+}
+
+.novelties .novelties__front .front__card .card__footer {
+  display:flex;
+  align-items: center;
+}
+
+.novelties .novelties__front .front__card .card__footer .footer__img {
+  border-radius: 50%;
+  height: 60px;
+  width:auto;
+}
+
+.novelties .novelties__front .front__card .card__footer .footer__h3 {
+  margin-left: 0.5em;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.novelties .novelties__front .novelties__aside {
+  padding-left: 2rem;
+  width: 40%;
+}
+
+.novelties .novelties__front .novelties__aside .aside__card {
+  display: flex;
+  align-items: center;
+  padding: 1em 0em  ;
+}
+
+.novelties .novelties__front .novelties__aside .aside__card .card__img {
+  width: 50%;
+}
+
+.novelties .novelties__front .novelties__aside .aside__card .card__img .card__img--principal,
+.populars .populars__front .front__section .section__row--1 .row__card .card__img,
+.populars .populars__front .front__section .section__row--2 .row__card .card__img,
+.populars .populars__front .front__aside .aside__container--html .content__img, 
+.populars .populars__front .front__aside .aside__container--js .content__img, 
+.populars .populars__front .front__aside .aside__container--css .content__img, 
+.populars .populars__front .front__aside .aside__container--react .content__img,
+.populars .populars__front .front__aside .aside__container--vue .content__img,
+.populars .populars__front .front__aside .aside__container--bootstrap .content__img 
+{
+  display: inline-flex;
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+.novelties .novelties__front .novelties__aside .aside__card .card__body {
+  padding-left: 1em;
+}
+
+.novelties .novelties__front .novelties__aside .aside__card .card__body .body__date, 
+.populars .populars__front .front__section .section__row--1 .row__card .card__h5 , 
+.populars .populars__front .front__section .section__row--2 .row__card .card__h5 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.novelties .novelties__front .novelties__aside .aside__card .card__body .body__title , 
+.populars .populars__front .front__section .section__row--1 .row__card .card__h3 , 
+.populars .populars__front .front__section .section__row--2 .row__card .card__h3 {
+  padding: 0.5em 0em;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.novelties .novelties__front .novelties__aside .aside__card .card__footer, 
+.populars .populars__front .front__section .section__row--1 .row__card .card__footer,
+.novelties .novelties__front .novelties__aside .aside__card .card__footer, 
+.populars .populars__front .front__section .section__row--2 .row__card .card__footer
+{
+  display: inline-flex;
+  align-items: center;
+}
+
+.novelties .novelties__front .novelties__aside .aside__card .card__footer .footer__img , 
+.populars .populars__front .front__section .section__row--1 .row__card .card__footer .footer__img , 
+.populars .populars__front .front__section .section__row--2 .row__card .card__footer .footer__img{
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.novelties .novelties__front .novelties__aside .aside__card .card__footer .footer__h5, 
+.populars .populars__front .front__section .section__row--1 .row__card .card__footer .footer__h5,
+.populars .populars__front .front__section .section__row--2 .row__card .card__footer .footer__h5{
+  margin-left: 0.5em;
+  font-weight: 500;
+  font-size: 16px;
+}
+ .populars .populars__front .front__section {
+  width: 70%;
+ }
+ .populars .populars__front .front__section .section__row--1, 
+ .populars .populars__front .front__section .section__row--2 {
+  display: flex;
+  align-items: center;
+ }
+
+ .populars .populars__front .front__section .section__row--1 .row__card, 
+ .populars .populars__front .front__section .section__row--2 .row__card
+ {
+  width: 100%;
+ }
+
+.populars .populars__front .front__aside .aside__container--html, 
+.populars .populars__front .front__aside .aside__container--js, 
+.populars .populars__front .front__aside .aside__container--css, 
+.populars .populars__front .front__aside .aside__container--react,
+.populars .populars__front .front__aside .aside__container--vue,
+.populars .populars__front .front__aside .aside__container--bootstrap {
+  display: flex;
+  align-items: center;
+  padding: 1em 0em;
+ }
+
+ .populars .populars__front .front__aside {
+  width: 30%;
+ }
+
+
+
+/* zona display cards */
+
+
+
+/* Zona Inferior */
+.blogbar .blogbar__author {
+  width: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.blogbar .blogbar__author .author__h5,
+.novelties .novelties__front .front__card .card__h5{
+  font-weight: 400;
+  font-size: 20px;
+}
