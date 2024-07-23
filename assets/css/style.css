@@ -25,7 +25,8 @@
 
 
 
-*,body {
+*,
+body {
   font-family: "Poppins", sans-serif;
   max-width: 100%;
   margin: 0;
@@ -38,29 +39,31 @@
   padding: 1rem 1.5rem;
 }
 
-.blogbar .blogbar__content {
+.blogbar__content {
   width: 50%;
   align-items: center;
   display: inline-flex;
 }
 
-.blogbar .blogbar__content .content__img {
+.content__img {
   width: 40px;
   height: auto;
   border-radius: 0.5em;
   max-width: 100%;
 }
 
-.blogbar .blogbar__content .content__h3 {
+.content__h3 {
   font-weight: 700;
   margin-left: 0.5em;
 }
 
-.novelties, .populars {
+.novelties,
+.populars {
   padding: 1rem 1.5rem;
 }
-.novelties .novelties__front,  .populars .populars__front
-{
+
+.novelties__front,
+.populars__front {
   display: flex;
   width: 100%;
 }
@@ -68,12 +71,14 @@
 .novelties .novelties__front .front__card {
   width: 60%;
 }
+
 .novelties .novelties__title .title__h3,
 .novelties .novelties__front .front__card .card__h3,
-.populars  .populars__front .populars__title .title__h3,
-.populars .front__aside .aside__title .title__h3{
+.populars .populars__front .populars__title .title__h3,
+.populars .front__aside .aside__title .title__h3 {
   font-weight: 700;
   margin: 2rem 0rem;
+  width: 100%;
 }
 
 .novelties .novelties__front .front__card .card__img {
@@ -83,14 +88,14 @@
 }
 
 .novelties .novelties__front .front__card .card__footer {
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
 .novelties .novelties__front .front__card .card__footer .footer__img {
   border-radius: 50%;
   height: 60px;
-  width:auto;
+  width: auto;
 }
 
 .novelties .novelties__front .front__card .card__footer .footer__h3 {
@@ -107,7 +112,7 @@
 .novelties .novelties__front .novelties__aside .aside__card {
   display: flex;
   align-items: center;
-  padding: 1em 0em  ;
+  padding: 1em 0em;
 }
 
 .novelties .novelties__front .novelties__aside .aside__card .card__img {
@@ -117,8 +122,7 @@
 
 .novelties .novelties__front .novelties__aside .aside__card .card__img .card__img--principal,
 .populars .populars__front .front__section .section__row--1 .row__card .card__img,
-.populars .populars__front .front__section .section__row--2 .row__card .card__img 
-{
+.populars .populars__front .front__section .section__row--2 .row__card .card__img {
   max-width: 100%;
   max-height: 100%;
   height: auto;
@@ -130,101 +134,107 @@
   padding-left: 1em;
 }
 
-.novelties .novelties__front .novelties__aside .aside__card .card__body .body__date, 
-.populars .populars__front .front__section .section__row--1 .row__card .card__h5 , 
+.novelties .novelties__front .novelties__aside .aside__card .card__body .body__date,
+.populars .populars__front .front__section .section__row--1 .row__card .card__h5,
 .populars .populars__front .front__section .section__row--2 .row__card .card__h5 {
   font-weight: 400;
   font-size: 16px;
 }
 
-.novelties .novelties__front .novelties__aside .aside__card .card__body .body__title , 
-.populars .populars__front .front__section .section__row--1 .row__card .card__h3 , 
+.novelties .novelties__front .novelties__aside .aside__card .card__body .body__title,
+.populars .populars__front .front__section .section__row--1 .row__card .card__h3,
 .populars .populars__front .front__section .section__row--2 .row__card .card__h3 {
   padding: 0.5em 0em;
   font-weight: 700;
   font-size: 20px;
 }
 
-.novelties .novelties__front .novelties__aside .aside__card .card__footer, 
+.novelties .novelties__front .novelties__aside .aside__card .card__footer,
 .populars .populars__front .front__section .section__row--1 .row__card .card__footer,
-.novelties .novelties__front .novelties__aside .aside__card .card__footer, 
-.populars .populars__front .front__section .section__row--2 .row__card .card__footer
-{
+.novelties .novelties__front .novelties__aside .aside__card .card__footer,
+.populars .populars__front .front__section .section__row--2 .row__card .card__footer {
   display: inline-flex;
   align-items: center;
 }
 
-.novelties .novelties__front .novelties__aside .aside__card .card__footer .footer__img , 
-.populars .populars__front .front__section .section__row--1 .row__card .card__footer .footer__img , 
-.populars .populars__front .front__section .section__row--2 .row__card .card__footer .footer__img{
+.novelties .novelties__front .novelties__aside .aside__card .card__footer .footer__img,
+.populars .populars__front .front__section .section__row--1 .row__card .card__footer .footer__img,
+.populars .populars__front .front__section .section__row--2 .row__card .card__footer .footer__img {
   height: 40px;
   width: auto;
   border-radius: 50%;
 }
 
-.novelties .novelties__front .novelties__aside .aside__card .card__footer .footer__h5, 
+.novelties .novelties__front .novelties__aside .aside__card .card__footer .footer__h5,
 .populars .populars__front .front__section .section__row--1 .row__card .card__footer .footer__h5,
-.populars .populars__front .front__section .section__row--2 .row__card .card__footer .footer__h5{
+.populars .populars__front .front__section .section__row--2 .row__card .card__footer .footer__h5 {
   margin-left: 0.5em;
   font-weight: 500;
   font-size: 16px;
 }
- .populars .populars__front .front__section {
+
+.populars .populars__front .front__section {
   width: 70%;
- }
- .populars .populars__front .front__section .section__row--1, 
- .populars .populars__front .front__section .section__row--2 {
+}
+
+.populars .populars__front .front__section .section__row--1,
+.populars .populars__front .front__section .section__row--2 {
   display: inline-flex;
   align-items: center;
- }
+}
 
- .populars .populars__front .front__section .section__row--1 .row__card, 
- .populars .populars__front .front__section .section__row--2 .row__card
- {
+.populars .populars__front .front__section .section__row--1 .row__card,
+.populars .populars__front .front__section .section__row--2 .row__card {
   overflow: hidden;
-  width: 50%;
- }
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 /* Agregar un div llamado aside__containers para que así aplicar la regla justify-contet:space around */
-.populars .populars__front .front__aside .aside__container--html, 
-.populars .populars__front .front__aside .aside__container--js, 
-.populars .populars__front .front__aside .aside__container--css, 
+.populars .populars__front .front__aside .aside__container--html,
+.populars .populars__front .front__aside .aside__container--js,
+.populars .populars__front .front__aside .aside__container--css,
 .populars .populars__front .front__aside .aside__container--react,
 .populars .populars__front .front__aside .aside__container--vue,
 .populars .populars__front .front__aside .aside__container--bootstrap {
-  display:inline-flex;
+  display: inline-flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 1em 0em;
+  margin: 1em 0em;
   width: 100%;
- }
+}
 
- .populars .populars__front .front__aside .aside__container--html .container__img, 
- .populars .populars__front .front__aside .aside__container--js .container__img, 
- .populars .populars__front .front__aside .aside__container--css .container__img, 
- .populars .populars__front .front__aside .aside__container--react .container__img,
- .populars .populars__front .front__aside .aside__container--vue .container__img,
- .populars .populars__front .front__aside .aside__container--bootstrap .container__img{
+.populars .populars__front .front__aside .aside__container--html .container__img,
+.populars .populars__front .front__aside .aside__container--js .container__img,
+.populars .populars__front .front__aside .aside__container--css .container__img,
+.populars .populars__front .front__aside .aside__container--react .container__img,
+.populars .populars__front .front__aside .aside__container--vue .container__img,
+.populars .populars__front .front__aside .aside__container--bootstrap .container__img {
   width: 15%;
- }
+}
 
- .populars .populars__front .front__aside .aside__container--html .container__h4, 
- .populars .populars__front .front__aside .aside__container--js .container__h4, 
- .populars .populars__front .front__aside .aside__container--css .container__h4, 
- .populars .populars__front .front__aside .aside__container--react .container__h4,
- .populars .populars__front .front__aside .aside__container--vue .container__h4,
- .populars .populars__front .front__aside .aside__container--bootstrap .container__h4{
+.populars .populars__front .front__aside .aside__container--html .container__h4,
+.populars .populars__front .front__aside .aside__container--js .container__h4,
+.populars .populars__front .front__aside .aside__container--css .container__h4,
+.populars .populars__front .front__aside .aside__container--react .container__h4,
+.populars .populars__front .front__aside .aside__container--vue .container__h4,
+.populars .populars__front .front__aside .aside__container--bootstrap .container__h4 {
   width: 85%;
- }
+}
 
- .populars .populars__front .front__aside {
+.populars .populars__front .front__aside {
   width: 30%;
- }
+  padding-left: 2rem;
+}
 
 
 
 /* zona display cards */
 
-
+/* Ajustar padding o margin de h3 de populars y seguir reduciendo las clases */
 
 /* Zona Inferior */
 .blogbar .blogbar__author {
@@ -235,7 +245,7 @@
 }
 
 .blogbar .blogbar__author .author__h5,
-.novelties .novelties__front .front__card .card__h5{
+.novelties .novelties__front .front__card .card__h5 {
   font-weight: 400;
   font-size: 20px;
 }
