@@ -1,30 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* @media (max-width: 576px) {
-  body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .blogbar {
-    flex-direction: column;
-    display: flex;
-    width: 100%;
-    height: 100px;
-    padding: 5px 10px;
-  }
-
-  .blogbar__author,
-  .blogbar__content {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-  }
-} */
-
-
-
 *,
 body {
   font-family: "Poppins", sans-serif;
@@ -120,14 +95,19 @@ body {
   object-fit: cover;
 }
 
-.novelties .novelties__front .novelties__aside .aside__card .card__img .card__img--principal,
-.populars .populars__front .front__section .section__row--1 .row__card .card__img,
-.populars .populars__front .front__section .section__row--2 .row__card .card__img {
+.novelties .novelties__front .novelties__aside .aside__card .card__img .card__img--principal {
   max-width: 100%;
   max-height: 100%;
   height: auto;
   border-radius: 0.5em;
   object-fit: cover;
+}
+
+.populars .populars__front .front__section .section__row--1 .row__card .card__img,
+.populars .populars__front .front__section .section__row--2 .row__card .card__img 
+{
+  width: 300px;
+  height: 200px;
 }
 
 .novelties .novelties__front .novelties__aside .aside__card .card__body {
@@ -179,6 +159,7 @@ body {
 
 .populars .populars__front .front__section .section__row--1,
 .populars .populars__front .front__section .section__row--2 {
+  width: 700px;
   display: inline-flex;
   align-items: center;
 }
@@ -193,18 +174,20 @@ body {
 }
 
 /* Agregar un div llamado aside__containers para que así aplicar la regla justify-contet:space around */
-.populars .populars__front .front__aside .aside__container--html,
-.populars .populars__front .front__aside .aside__container--js,
-.populars .populars__front .front__aside .aside__container--css,
-.populars .populars__front .front__aside .aside__container--react,
-.populars .populars__front .front__aside .aside__container--vue,
-.populars .populars__front .front__aside .aside__container--bootstrap {
+.aside__container--html,
+.aside__container--js,
+.aside__container--css,
+.aside__container--react,
+.aside__container--vue,
+.aside__container--bootstrap {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 1em 0em;
-  width: 100%;
+  margin: 1rem 0rem;
+  padding: 0.5em 0;
+  width: 360px;
+  height: 55px;
 }
 
 .populars .populars__front .front__aside .aside__container--html .container__img,
@@ -213,18 +196,19 @@ body {
 .populars .populars__front .front__aside .aside__container--react .container__img,
 .populars .populars__front .front__aside .aside__container--vue .container__img,
 .populars .populars__front .front__aside .aside__container--bootstrap .container__img {
-  width: 15%;
+  width: 50px;
+  height: auto;
 }
 
-.populars .populars__front .front__aside .aside__container--html .container__h4,
-.populars .populars__front .front__aside .aside__container--js .container__h4,
-.populars .populars__front .front__aside .aside__container--css .container__h4,
-.populars .populars__front .front__aside .aside__container--react .container__h4,
-.populars .populars__front .front__aside .aside__container--vue .container__h4,
-.populars .populars__front .front__aside .aside__container--bootstrap .container__h4 {
+/*  .aside__container--html .container__h4,
+ .aside__container--js .container__h4,
+ .aside__container--css .container__h4,
+ .aside__container--react .container__h4,
+ .aside__container--vue .container__h4,
+ .aside__container--bootstrap .container__h4 {
   width: 85%;
 }
-
+ */
 .populars .populars__front .front__aside {
   width: 30%;
   padding-left: 2rem;
