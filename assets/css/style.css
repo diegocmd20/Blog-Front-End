@@ -50,7 +50,9 @@ body {
 .novelties .novelties__title .title__h3,
 .novelties .novelties__front .front__card .card__h3,
 .populars .populars__front .populars__title .title__h3,
-.populars .front__aside .aside__title .title__h3 {
+.populars .front__aside .aside__title .title__h3,
+.front__section .title__h3,
+.front__aside .title__h3 {
   font-weight: 700;
   margin: 2rem 0rem;
   width: 100%;
@@ -103,15 +105,16 @@ body {
   object-fit: cover;
 }
 
-.populars .populars__front .front__section .section__row--1 .row__card .card__img,
-.populars .populars__front .front__section .section__row--2 .row__card .card__img 
+.row__card .card__img 
 {
   width: 300px;
   height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
-.novelties .novelties__front .novelties__aside .aside__card .card__body {
-  padding-left: 1em;
+.aside__card .card__body {
+  padding-left: 1rem;
 }
 
 .novelties .novelties__front .novelties__aside .aside__card .card__body .body__date,
@@ -155,25 +158,26 @@ body {
 
 .populars .populars__front .front__section {
   width: 70%;
+  justify-content: center;
 }
 
 .populars .populars__front .front__section .section__row--1,
 .populars .populars__front .front__section .section__row--2 {
-  width: 700px;
-  display: inline-flex;
+  width: 800px;
+  display: inline-flex;  
   align-items: center;
+  justify-content: center;
 }
 
-.populars .populars__front .front__section .section__row--1 .row__card,
-.populars .populars__front .front__section .section__row--2 .row__card {
-  overflow: hidden;
+.section__row--1 .row__card,
+.section__row--2 .row__card {
   display: flex;
   flex-wrap: wrap;
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 1rem;
 }
 
-/* Agregar un div llamado aside__containers para que así aplicar la regla justify-contet:space around */
 .aside__container--html,
 .aside__container--js,
 .aside__container--css,
@@ -182,45 +186,61 @@ body {
 .aside__container--bootstrap {
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 1rem 0rem;
-  padding: 0.5em 0;
+  padding:  1rem 1.5rem;
   width: 360px;
   height: 55px;
+  border-radius: 1rem;
+  color: #ffffff;
 }
 
-.populars .populars__front .front__aside .aside__container--html .container__img,
-.populars .populars__front .front__aside .aside__container--js .container__img,
-.populars .populars__front .front__aside .aside__container--css .container__img,
-.populars .populars__front .front__aside .aside__container--react .container__img,
-.populars .populars__front .front__aside .aside__container--vue .container__img,
-.populars .populars__front .front__aside .aside__container--bootstrap .container__img {
+.aside__container--html {
+  background-color:  #E93E30;
+}
+.aside__container--js {
+  background-color: #F7E018;
+}
+.aside__container--css {
+  background-color: #299ED5;
+}
+.aside__container--react {
+  background-color: #292C33;
+}
+.aside__container--vue {
+  background-color: #67C770;
+}
+.aside__container--bootstrap {
+  background-color: #563D7C;
+
+}
+
+.aside__container--html .container__img,
+.aside__container--js .container__img,
+.aside__container--css .container__img,
+.aside__container--react .container__img,
+.aside__container--vue .container__img,
+.aside__container--bootstrap .container__img {
   width: 50px;
   height: auto;
 }
 
-/*  .aside__container--html .container__h4,
- .aside__container--js .container__h4,
- .aside__container--css .container__h4,
- .aside__container--react .container__h4,
- .aside__container--vue .container__h4,
- .aside__container--bootstrap .container__h4 {
-  width: 85%;
+.aside__container--html .container__h4,
+.aside__container--js .container__h4,
+.aside__container--css .container__h4,
+.aside__container--react .container__h4,
+.aside__container--vue .container__h4,
+.aside__container--bootstrap .container__h4 {
+ font-weight: 700;
+ font-size: 32px;
 }
- */
+
 .populars .populars__front .front__aside {
   width: 30%;
   padding-left: 2rem;
 }
 
-
-
-/* zona display cards */
-
-/* Ajustar padding o margin de h3 de populars y seguir reduciendo las clases */
-
-/* Zona Inferior */
 .blogbar .blogbar__author {
   width: 50%;
   display: inline-flex;
@@ -229,7 +249,8 @@ body {
 }
 
 .blogbar .blogbar__author .author__h5,
-.novelties .novelties__front .front__card .card__h5 {
+.novelties .novelties__front .front__card .card__h5,
+.aside__footer {
   font-weight: 400;
   font-size: 20px;
 }
